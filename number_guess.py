@@ -5,7 +5,7 @@ import os
 random_choice=random.randrange(1,101)
 
 def easy():
-    choose=input("type 'hard 'for hard  game and 'easy' for easy game:").lower()
+    choose=input("Type 'hard 'for hard  game and 'easy' for easy game:").lower()
     if choose=="hard":
         i=5
     elif choose=="easy":
@@ -18,7 +18,7 @@ def easy():
        
         print(f"you have only {i} times")
         i=i-1
-        user_guess=int(input("enter your guessing number:"))
+        user_guess=int(input("guess the number:"))
         
         if user_guess>random_choice:
             print("Too high")
@@ -33,8 +33,8 @@ def easy():
                 
 
         
-    print("sorry::time out")
-    print(f"guessing number is:{random_choice}")
+    print("sorry::better guess next time")
+    print(f"random number is:{random_choice}")
 
 
 end=True
